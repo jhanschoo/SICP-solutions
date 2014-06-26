@@ -1,0 +1,5 @@
+(define (a-plus-abs-b a b)
+  ((if (> b 0) + -) a b))
+; the evaluator evaluaes (> b 0)
+; if it is so, the evaluator evaluates (+ a b)
+; otherwise, the evaluator evaluates (- a b)
